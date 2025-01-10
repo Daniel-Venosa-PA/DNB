@@ -56,8 +56,10 @@ app.post(
         'content-type': 'application/json',
         'user-agent': 'Mozilla/5.0',
       },
-      url: 'https://4114764.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=2035&deploy=2&compid=4114764&h=809eb4d9ec8261e418b0',
-      data: JSON.stringify(req.body),
+	  //previous link
+      //url: 'https://4114764.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=2035&deploy=2&compid=4114764&h=809eb4d9ec8261e418b0',
+      url: 'https://4114764.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=2035&deploy=2&compid=4114764&ns-at=AAEJ7tMQH967G14X66pTr984H1tO-q6E0fuyuedLP2I-ddMqEiA',
+	  data: JSON.stringify(req.body),
     });
     if (nsResponse.status === 200) {
       res.status(200).type('application/xml')
