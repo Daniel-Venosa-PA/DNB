@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/get_asc_gzip",
+      "dest": "server.js"
+    },
+    {
+      "src": "/api/pa-dnb/e0ece195-941f-4bf4-9556-413e6754f547",
+      "dest": "server.js"
+    }
+  ]
+}
